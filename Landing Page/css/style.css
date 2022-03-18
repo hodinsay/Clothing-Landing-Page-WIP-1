@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     margin: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Header */
+/* *************************************** */
+header > div {
+     display: flex;
+     flex-direction: column;
+     width: 80%;
+     margin: 0 10%;
+     border-bottom: 5px solid silver;
+}
+
+header > div > h3 {
+     margin: 0.5rem 0 0.5rem 2.5rem;
+}
+
+header > div > ul {
+     display: flex;
+     justify-content: space-between;
+     list-style-type: none;
+     padding-bottom: 1rem;
+}
+
+.followbtn {
+     padding: 0.5rem 1.5rem;
+     background-color: white;
+     border-radius: 5px;
+     border: 1px solid grey;
+}
+
+.followbtn:hover{
+     background-color: silver;
+     cursor: pointer;
+}
+
+input{
+     border: 1px solid grey;
+     border-radius: 5px;
+     padding: 0.5rem 3rem 0.5rem 2.5rem;
+     display: block;
+     width: 100%;
+     outline: 0;
+     margin-right: 2.5rem;
+}
+
+.form-input{
+     float: left;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+}
+
+.icon{
+     position: absolute;
+     left: 15px;
+     top: 0;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+/* #one */
+/* ******************************* */
+.get-started {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100px;
+     height: 200px;
+     width: 80%;
+     margin: 0 10%;
+     border-bottom: 1px solid black;
+}
+
+.get-started > p {
+     font-family: 'Montserrat', sans-serif;
+     font-size: 35px;
+     margin-bottom: 1.5rem;
+     font-weight: bold;
+}
+
+.get-started > p > span {
+     font-style: italic;
+}
+
+.get-started > a > button {
+     padding: 1rem 1rem;
+     font-size: 35px;
+     color: white;
+     background-color: black;
+     cursor: pointer;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
